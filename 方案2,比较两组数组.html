@@ -8,44 +8,49 @@
 	
 </body>
 <script type="text/javascript">
-//预计方法有2种
-//1.二分法
-//2.比较两组数组
 
-//2.比较两组数组程序
-//test 寻找5,11,17
-	var testAllArr=[1,2,3,20,4,6,8,9,12,13,14,15,10,16,18,7,19,5,11,17];
-	var testArr=[1,2,3,20,4,6,8,9,12,13,14,15,10,16,18,7,19];
-	var resultArr=[];
-	var j=0;
 
-	var testAllArrTemp=testAllArr.sort(function(a,b){
-		return a-b;
-	});
-	var testArrTemp=testArr.sort(function(a,b){
-		return a-b;
-	});
-	console.log(testAllArrTemp);
-	console.log(testAllArrTemp.length);
-	console.log(testArrTemp);
-	console.log(testArrTemp.length);
+	console.log("OKOK!");
 
-	for(var i=0;i<testAllArr.length;i++){
-		if(testAllArr[i]==testArr[i-j]){
-			console.log("相等");
-			continue;
-		}else{
-			// console.log("不相等");
-			console.log(testAllArr[i]+"  不相等");
-			resultArr.push(testAllArr[i]);
-			j++;
-			if(j==(testAllArr.length-testArr.length)){
-				console.log("不相等的个数是："+j);
-				break;
-			}
-		}
-	}
-	// console.log("不相等的个数是："+j);
-	console.log("不相等的数分别是："+resultArr);
+
+////预计方法有2种
+////1.二分法
+////2.比较两组数组
+//
+////2.比较两组数组程序
+////test 寻找5,11,17
+//	var testAllArr=[1,2,3,20,4,6,8,9,12,13,14,15,10,16,18,7,19,5,11,17];
+//	var testArr=[1,2,3,20,4,6,8,9,12,13,14,15,10,16,18,7,19];
+//	var resultArr=[];
+//	var j=0;
+//
+//	var testAllArrTemp=testAllArr.sort(function(a,b){
+//		return a-b;
+//	});
+//	var testArrTemp=testArr.sort(function(a,b){
+//		return a-b;
+//	});
+//	console.log(testAllArrTemp);
+//	console.log(testAllArrTemp.length);
+//	console.log(testArrTemp);
+//	console.log(testArrTemp.length);
+//
+//	for(var i=0;i<testAllArr.length;i++){
+//		if(testAllArr[i]==testArr[i-j]){
+//			console.log("相等");
+//			continue;
+//		}else{
+//			// console.log("不相等");
+//			console.log(testAllArr[i]+"  不相等");
+//			resultArr.push(testAllArr[i]);
+//			j++;
+//			if(j==(testAllArr.length-testArr.length)){
+//				console.log("不相等的个数是："+j);
+//				break;
+//			}
+//		}
+//	}
+//	// console.log("不相等的个数是："+j);
+//	console.log("不相等的数分别是："+resultArr);
 </script>
 </html>
